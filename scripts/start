@@ -1,0 +1,10 @@
+#!/bin/bash
+# -----------------------------------------------------------------------------
+# docker-phpfpm /start script
+#
+# Author:  Brian Eilber
+# Updated: Jun 6th, 2015
+# -----------------------------------------------------------------------------
+
+	sed -i s,^listen =,/data/php5-fpm.sock,g /usr/local/etc/php-fpm.conf
+
